@@ -1,0 +1,46 @@
+.recepieWrapper {
+    margin: 5% 12%;
+    background-color: #d8c3a5;
+    padding: 3%;
+}
+.imgContainer {
+    text-align: center;
+}
+.recepieWrapper img {
+    width: 60%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.heading h1 {
+    font-size: 4rem;
+}
+.recepieDetails {
+    margin-top: 5%;
+    background-color: crimson;
+    color: #fff;
+    border-radius: 5px;
+    padding: 3%;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    width: 60%;
+}
+.list li {
+    border-bottom: 1px solid #e2e2e2;
+    margin: 2% 0;
+    padding: 2% 0;
+}
+.list li:last-child {
+    border: none;
+}
+.srNo {
+    border: 1px solid white;
+    border-radius: 50%;
+}

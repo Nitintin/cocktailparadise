@@ -1,0 +1,40 @@
+.cocktailItem {
+    text-align: center;
+    margin-bottom: 2%;
+    transition: 0.4s;
+}
+.cocktailItem:hover {
+    background-color: beige;
+    cursor: pointer;
+}
+.bannerImg {
+    width: 100%;
+}
+.cocktailItem img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.listWrapper {
+    margin: 0 10%;
+}
+.bannerWrapper {
+    position: relative;
+}
+.bannerImg {
+    opacity: 0.8;
+}
+.bannerMsg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    opacity: 1;
+}
+.bannerArrow {
+    color: #fff;
+    bottom: 10px;
+    left: 50%;
+    position: absolute;
+}
