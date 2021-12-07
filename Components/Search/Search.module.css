@@ -1,0 +1,10 @@
+.errorWrapper {
+    background-image: url("/search_notFound.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}

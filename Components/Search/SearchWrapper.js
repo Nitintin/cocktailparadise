@@ -1,11 +1,13 @@
 import React from 'react'
+import RecepieWrapper from '../Recepie/RecepieWrapper'
+import NoResult from './NoResult'
 
-const SearchWrapper = () => {
-    return (
-        <div>
-            search item will be displayed here
-        </div>
-    )
+const SearchWrapper = ({ drinkDetails }) => {
+    if (drinkDetails) {
+        return <RecepieWrapper drinkDetail={drinkDetails[0]} />
+    } else {
+        return <NoResult />
+    }
 }
 
 export default SearchWrapper

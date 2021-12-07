@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import RecepieWrapper from './RecepieWrapper';
 
-
 const RandomRecepie = () => {
     const [randomDetail, setRandomDetail] = useState({});
     useEffect(() => {
