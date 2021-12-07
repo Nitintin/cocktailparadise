@@ -6,7 +6,10 @@ const ListingBanner = () => {
     return (
         <div className={classess.bannerWrapper}>
             <img className={classess.bannerImg} src={"/listing_banner.jpg"} alt="banner" />
-            <h1 className={classess.bannerMsg}>100+ Cocktails To Explore</h1>
+            <div className={classess.bannerMsg}>
+                <h1>100+ Cocktails To Explore</h1>
+                <input type="text" />
+            </div>
             <ExpandMoreIcon className={classess.bannerArrow} />
         </div>
     )

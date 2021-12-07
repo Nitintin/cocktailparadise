@@ -8,7 +8,7 @@ const LandingPage = () => {
     return (
         <main className={classes.homePage}>
             <section className={classes.textWrapper}>
-                <h1>The Cocktail Paradise</h1>
+                <h1 className={classes.heading}>The Cocktail Paradise</h1>
                 <Link href="/listing" passHref>
                     <Button variant="contained" color="primary">View all cocktails</Button>
                 </Link>
