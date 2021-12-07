@@ -25,3 +25,6 @@
     font-family: "Smooch", cursive;
     font-size: 60px;
 }
+.textWrapper .categoryBtn {
+    margin: 1%;
+}
