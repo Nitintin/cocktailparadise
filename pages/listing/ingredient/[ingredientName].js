@@ -10,6 +10,7 @@ export async function getStaticProps({ params }) {
         params.ingredientName = "Punch_/_Party_Drink";
     }
     const fetchedDrinks = await axios(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=` + params.ingredientName);
+
     return {
         props: {
             drinks: fetchedDrinks.data.drinks,
