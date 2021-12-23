@@ -14,13 +14,13 @@ export async function getServerSideProps({ params }) {
     }
 }
 
-export async function getStaticPaths() {
-    return {
-        paths: [
-            { params: { searchName: "margarita" } },
-        ],
-        fallback: true,
-    }
-}
+// export async function getStaticPaths() {
+//     return {
+//         paths: [
+//             { params: { searchName: "margarita" } },
+//         ],
+//         fallback: true,
+//     }
+// }
 
 export default search
