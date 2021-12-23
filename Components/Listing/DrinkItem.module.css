@@ -19,28 +19,46 @@
     margin: 0 10%;
 }
 .bannerWrapper {
-    position: relative;
+    /* position: relative; */
+    background: url("/listing_banner.jpg");
 }
 .bannerImg {
     opacity: 0.6;
 }
 .bannerMsg {
-    position: absolute;
-    font-family: "Smooch", cursive;
+    /* position: absolute; */
+    font-family: "Oooh Baby", cursive;
     font-size: 2.5rem;
     text-align: center;
     width: 100%;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
     color: #000;
     opacity: 1;
+    padding: 5% 0 10% 0;
+    -webkit-text-stroke: 0.5px black;
+}
+.bannerMsg h1 {
+    background: rgba(225, 225, 225, 0.5);
 }
 .bannerArrow {
     color: #fff;
     bottom: 10px;
     left: 50%;
     position: absolute;
+}
+.searchContainer input {
+    padding: 2%;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 2%;
+}
+.searchContainer button {
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid black;
 }
 @media (max-width: 768px) {
     .bannerMsg {

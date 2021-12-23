@@ -1,11 +1,13 @@
 import React, { useRef } from 'react'
 import classess from './DrinkItem.module.css'
 import { useRouter } from 'next/router'
+import Grid from '@material-ui/core/Grid';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const ListingBanner = ({ endpoint }) => {
     let bannerText = "";
     const searchRef = useRef("");
+    const ingredientRef = useRef("");
     const router = useRouter();
 
     switch (endpoint) {
@@ -25,7 +27,8 @@ const ListingBanner = ({ endpoint }) => {
             bannerText = "You would love these Beer Cocktails"
             break;
 
-        default: "Woah!?"
+        default:
+            bannerText = "Cocktails that go with your choice"
 
     }
 
@@ -33,14 +36,28 @@ const ListingBanner = ({ endpoint }) => {
         router.push("/search/" + searchRef.current.value.split(" ").join("_"));
     }
 
+    const handleIngredientSearch = () => {
+        router.push("/listing/ingredient/" + ingredientRef.current.value);
+    }
+
     return (
         <div className={classess.bannerWrapper}>
-            <img className={classess.bannerImg} src={"/listing_banner.jpg"} alt="banner" />
+            {/* <img className={classess.bannerImg} src={"/listing_banner.jpg"} alt="banner" /> */}
             <div className={classess.bannerMsg}>
                 <h1>{bannerText}</h1>
-                <input type="text" placeholder="search your drink" ref={searchRef} /><button onClick={handleSearchClick}>Search</button>
+                <Grid container>
+                    <Grid className={classess.searchContainer} item md={6} xs={12}>
+                        <input type="text" placeholder="search your drink" ref={searchRef} />
+                        <button onClick={handleSearchClick}>Search</button>
+                    </Grid>
+                    <Grid className={classess.searchContainer} item md={6} xs={12}>
+                        <input type="text" placeholder="search via ingredient" ref={ingredientRef} />
+                        <button onClick={handleIngredientSearch}>Search</button>
+                    </Grid>
+
+                </Grid>
             </div>
-            <ExpandMoreIcon className={classess.bannerArrow} />
+            {/* <ExpandMoreIcon className={classess.bannerArrow} /> */}
         </div>
     )
 }
